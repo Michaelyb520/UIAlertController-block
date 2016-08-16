@@ -3,8 +3,7 @@ UIAlertController 封装为工具类，通过 block，一句代码调用
 
 ## instructions （先导入 JHSysAlertUtil.h）
 
-```
-
+```objc
     /** 单按键 */
     [JHSysAlertUtil presentAlertViewWithTitle:@"标题" message:@"This a message" confirmTitle:@"确定" handler:^{
         NSLog(@"@@  This is just a log O(∩_∩)O~ @@");
@@ -21,6 +20,5 @@ UIAlertController 封装为工具类，通过 block，一句代码调用
     [JHSysAlertUtil presentAlertWithTitle:@"标题" message:@"This is message" actionTitles:@[@"first", @"second", @"third"] preferredStyle:UIAlertControllerStyleActionSheet handler:^(NSUInteger buttonIndex, NSString *buttonTitle) {
         NSLog(@"@@~~ : %lu, %@", (unsigned long)buttonIndex, buttonTitle);
     }];
-
 
 ```
